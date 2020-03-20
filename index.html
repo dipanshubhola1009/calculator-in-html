@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Calculator
+	</title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body class="body">
+<div class="row">
+<div class="col-sm-4">
+</div>
+<div class="col-sm-4 grey">
+<div class="box">	
+<form name="cal">
+	<div class="head">
+		Calculator
+	</div>
+	<input type="text" name="space" class="button2" id="backs">
+
+	<input type="button" name="9" value="9" onclick="cal.space.value+='9'" class="button">
+	<input type="button" name="8" value="8" onclick="cal.space.value+='8'" class="button">
+	<input type="button" name="7" value="7" onclick="cal.space.value+='7'"class="button">
+	<input type="button" name="+" value="+" onclick="cal.space.value+='+'"class="button">
+	<input type="button" name="6" value="6" onclick="cal.space.value+='6'"class="button">
+	<input type="button" name="5" value="5" onclick="cal.space.value+='5'"class="button">
+	<input type="button" name="4" value="4" onclick="cal.space.value+='4'"class="button">
+	<input type="button" name="-" value="-" onclick="cal.space.value+='-'"class="button">
+	<input type="button" name="3" value="3" onclick="cal.space.value+='3'"class="button">
+	<input type="button" name="2" value="2" onclick="cal.space.value+='2'"class="button">
+	<input type="button" name="1" value="1" onclick="cal.space.value+='1'"class="button">
+	<input type="button" name="*" value="*" onclick="cal.space.value+='*'"class="button">
+	<input type="button" name="." value="." onclick="cal.space.value+='.'"class="button">
+	<input type="button" name="0" value="0" onclick="cal.space.value+='0'"class="button">
+	<input type="button" name="%" value="%" onclick="cal.space.value+='%'"class="button">
+	<input type="button" name="=" value="=" onclick="cal.space.value= eval(cal.space.value)" class="button">
+	<br>
+	<input type="button" name="Delete" value="Delete" onclick="cal.space.value=''" class="button2">
+	
+</form>
+</div>
+</div>
+</div>
+
+<style type="text/css">
+	.body{
+		margin: 0px 0px 0px 0px;
+		
+	}
+	.grey
+	{
+		width: 100%;
+		s		border-radius: 30px;
+
+	}
+	.head
+	{   margin-left: 20%;
+		font-size: 30px;
+		font-family: sans-serif;
+	}
+	.box
+	{   margin-left: 23%;
+		margin-right: 23%;
+		width: 240px;
+		height: 480px;
+		align-content: auto;
+		background-color: white;
+		border-radius: 10px;
+		/*padding: 30px 50px 50px 23%;*/
+		background-color: #c7d0d4;
+		margin-top: 25px;
+	}
+	.button
+	{
+		width: 50px;
+		height: 50px;
+		border-radius: 25px;
+		margin:3px 1px 3px 4px;
+
+
+
+	}
+	.button2
+	{
+		width: 220px;
+		height: 50px;
+		border-radius: 10px;
+		margin:3px 0px 3px 10px;
+	}
+
+	@media only screen and (min-width: 786px)
+	{
+		.col-4
+		{
+			width: 33.33%;
+		}
+	} 
+	@media only screen and (max-width: 1024px)
+	{
+		.col-4{
+			width: 100%;
+		}
+	}
+	[class*=col-]
+	{
+		width: 100%;
+
+	}
+	
+
+</style>
+</body>
+</html>
